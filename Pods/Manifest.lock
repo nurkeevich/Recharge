@@ -1,0 +1,25 @@
+PODS:
+  - CountryList (1.1)
+  - PhoneNumberKit (2.6.0):
+    - PhoneNumberKit/PhoneNumberKitCore (= 2.6.0)
+    - PhoneNumberKit/UIKit (= 2.6.0)
+  - PhoneNumberKit/PhoneNumberKitCore (2.6.0)
+  - PhoneNumberKit/UIKit (2.6.0):
+    - PhoneNumberKit/PhoneNumberKitCore
+
+DEPENDENCIES:
+  - CountryList
+  - PhoneNumberKit (~> 2.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CountryList
+    - PhoneNumberKit
+
+SPEC CHECKSUMS:
+  CountryList: ad58cd670c4ecab6bb014abebc12e63f619174b2
+  PhoneNumberKit: 167ee1f0bbb6efce7c62559e620eae745595532f
+
+PODFILE CHECKSUM: b7bcff7f64b2cb3e406f7df1bab8d80837dcaea2
+
+COCOAPODS: 1.6.1
