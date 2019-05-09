@@ -51,19 +51,36 @@ class BalanceViewController: UIViewController, CountryListDelegate{
         return phone
     }()
     
+    let nextButton : UIButton = {
+        let button = UIButton(type: .system)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        button.setTitle("Next", for: .normal)
+        button.setTitleColor(#colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1), for: .normal)
+        
+        button.layer.borderColor = #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
+        button.layer.borderWidth = 1
+        button.layer.cornerRadius = 8
+        
+        button.addTarget(self, action: #selector(handleNextWindow), for: .touchUpInside)
+        
+        return button
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         
-        self.title = "Reload Balance"
-        
         phoneNumberField.becomeFirstResponder()
         countryList.delegate = self
-        
-        setupNavController()
         setupSelectButton()
         setupPhoneNumberField()
+        setupNextButton()
+    }
+    
+    @objc private func handleNextWindow() {
+        print("handle next window")
     }
     
     @objc private func handleNext() {
@@ -73,8 +90,13 @@ class BalanceViewController: UIViewController, CountryListDelegate{
         
     }
     
-    private func setupNavController() {
-        navigationController?.navigationBar.prefersLargeTitles = true
+    func setupNextButton() {
+        view.addSubview(nextButton)
+        
+        nextButton.topAnchor.constraint(equalTo: phoneNumberField.bottomAnchor, constant: 50).isActive = true
+        nextButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        nextButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        nextButton.widthAnchor.constraint(equalToConstant: view.frame.width/2).isActive = true
     }
     
     

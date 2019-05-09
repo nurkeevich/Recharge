@@ -35,8 +35,8 @@ class ViewController: UIViewController {
     }
     
     @objc private func handleNext() {
-        let navController = UINavigationController(rootViewController: BalanceViewController())
-        self.present(navController, animated: true, completion: nil)
+        let balanceController = BalanceViewController()
+        self.present(balanceController, animated: true, completion: nil)
     }
     
     func setupButton() {
@@ -50,4 +50,5 @@ class ViewController: UIViewController {
     
 
 }
+
 
