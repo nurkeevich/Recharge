@@ -11,8 +11,9 @@ import PhoneNumberKit
 import CountryList
 
 class BalanceViewController: UIViewController, CountryListDelegate{
+    
     func selectedCountry(country: Country) {
-        button.setTitle(country.flag, for: .normal)
+        button.setTitle("\(country.flag ?? "flag") \(country.name ?? "name")", for: .normal)
         phoneNumberField.text = "+\(country.phoneExtension)"
     }
     
@@ -25,9 +26,9 @@ class BalanceViewController: UIViewController, CountryListDelegate{
         
         button.setTitle("Select Country", for: .normal)
         
-        button.setTitleColor(#colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), for: .normal)
+        button.setTitleColor(#colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1), for: .normal)
         button.layer.borderWidth = 1
-        button.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        button.layer.borderColor = #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
         button.layer.cornerRadius = 8
         
         button.addTarget(self, action: #selector(handleNext), for: .touchUpInside)
@@ -40,25 +41,14 @@ class BalanceViewController: UIViewController, CountryListDelegate{
         phone.translatesAutoresizingMaskIntoConstraints = false
         
         phone.placeholder = "Enter Phone Number"
-        phone.textColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        phone.textColor = #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
         
         phone.layer.borderWidth = 1
-        phone.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
+        phone.layer.borderColor = #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
         phone.layer.cornerRadius = 8
         phone.keyboardType = .phonePad
         
         return phone
-    }()
-    
-    let image : UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        
-        image.layer.borderWidth = 1
-        image.layer.borderColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
-        image.layer.cornerRadius = 8
-        
-        return image
     }()
     
     override func viewDidLoad() {
@@ -74,7 +64,6 @@ class BalanceViewController: UIViewController, CountryListDelegate{
         setupNavController()
         setupSelectButton()
         setupPhoneNumberField()
-        setupImageView()
     }
     
     @objc private func handleNext() {
@@ -105,15 +94,6 @@ class BalanceViewController: UIViewController, CountryListDelegate{
         phoneNumberField.heightAnchor.constraint(equalToConstant: 50).isActive = true
         phoneNumberField.leadingAnchor.constraint(equalTo: button.leadingAnchor).isActive = true
         phoneNumberField.trailingAnchor.constraint(equalTo: button.trailingAnchor).isActive = true
-    }
-    
-    func setupImageView() {
-        view.addSubview(image)
-        
-        image.topAnchor.constraint(equalTo: phoneNumberField.bottomAnchor, constant: 20).isActive = true
-        image.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        image.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        image.heightAnchor.constraint(equalToConstant: 50).isActive = true
     }
 
 }
