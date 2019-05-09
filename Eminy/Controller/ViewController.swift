@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     }
     
     @objc private func handleNext() {
+        print("clicking get started button!")
         let balanceController = BalanceViewController()
         self.present(balanceController, animated: true, completion: nil)
     }
