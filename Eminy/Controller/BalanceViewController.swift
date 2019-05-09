@@ -80,8 +80,7 @@ class BalanceViewController: UIViewController, CountryListDelegate{
     }
     
     @objc private func handleNextWindow() {
-        let navController = UINavigationController(rootViewController: OperatorController())
-        self.present(navController, animated: true, completion: nil)
+        print("handle next window")
     }
     
     @objc private func handleNext() {

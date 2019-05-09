@@ -13,7 +13,6 @@
 		8D412F692279357C0080DE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D412F672279357C0080DE88 /* Main.storyboard */; };
 		8D412F6B2279357D0080DE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D412F6A2279357D0080DE88 /* Assets.xcassets */; };
 		8D412F6E2279357D0080DE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D412F6C2279357D0080DE88 /* LaunchScreen.storyboard */; };
-		8D5427E12284B3690017DDAF /* OperatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5427E02284B3690017DDAF /* OperatorController.swift */; };
 		8D73F2F6227F68A300A8DA78 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73F2F5227F68A300A8DA78 /* BalanceViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		8D412F6A2279357D0080DE88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D412F6D2279357D0080DE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D412F6F2279357D0080DE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D5427E02284B3690017DDAF /* OperatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorController.swift; sourceTree = "<group>"; };
 		8D73F2F5227F68A300A8DA78 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
 		B73C94205409E53CB7FA9747 /* Pods_Eminy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eminy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A629EE3870FCB834962867 /* Pods-Eminy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eminy.release.xcconfig"; path = "Target Support Files/Pods-Eminy/Pods-Eminy.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 			children = (
 				8D412F652279357C0080DE88 /* ViewController.swift */,
 				8D73F2F5227F68A300A8DA78 /* BalanceViewController.swift */,
-				8D5427E02284B3690017DDAF /* OperatorController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,7 +224,6 @@
 				8D73F2F6227F68A300A8DA78 /* BalanceViewController.swift in Sources */,
 				8D412F662279357C0080DE88 /* ViewController.swift in Sources */,
 				8D412F642279357C0080DE88 /* AppDelegate.swift in Sources */,
-				8D5427E12284B3690017DDAF /* OperatorController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
