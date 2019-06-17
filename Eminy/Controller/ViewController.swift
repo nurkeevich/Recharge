@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         self.present(balanceController, animated: true, completion: nil)
     }
     
-    func setupButton() {
+    private func setupButton() {
         view.addSubview(button)
         
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -48,8 +48,9 @@ class ViewController: UIViewController {
         button.heightAnchor.constraint(equalToConstant: 50).isActive = true
         button.widthAnchor.constraint(equalToConstant: view.frame.width/2).isActive = true
     }
-    
 
 }
+
+
 
 
