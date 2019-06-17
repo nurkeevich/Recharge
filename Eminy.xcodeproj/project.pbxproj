@@ -14,6 +14,7 @@
 		8D412F6B2279357D0080DE88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D412F6A2279357D0080DE88 /* Assets.xcassets */; };
 		8D412F6E2279357D0080DE88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D412F6C2279357D0080DE88 /* LaunchScreen.storyboard */; };
 		8D73F2F6227F68A300A8DA78 /* BalanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73F2F5227F68A300A8DA78 /* BalanceViewController.swift */; };
+		8DF943F4228ABD6D00025295 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DF943F3228ABD6C00025295 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8D412F6D2279357D0080DE88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D412F6F2279357D0080DE88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D73F2F5227F68A300A8DA78 /* BalanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewController.swift; sourceTree = "<group>"; };
+		8DF943F3228ABD6C00025295 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B73C94205409E53CB7FA9747 /* Pods_Eminy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Eminy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4A629EE3870FCB834962867 /* Pods-Eminy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eminy.release.xcconfig"; path = "Target Support Files/Pods-Eminy/Pods-Eminy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				8D412F6A2279357D0080DE88 /* Assets.xcassets */,
 				8D412F6C2279357D0080DE88 /* LaunchScreen.storyboard */,
 				8D412F6F2279357D0080DE88 /* Info.plist */,
+				8DF943F3228ABD6C00025295 /* GoogleService-Info.plist */,
 			);
 			path = Eminy;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				8D412F6E2279357D0080DE88 /* LaunchScreen.storyboard in Resources */,
 				8D412F6B2279357D0080DE88 /* Assets.xcassets in Resources */,
 				8D412F692279357C0080DE88 /* Main.storyboard in Resources */,
+				8DF943F4228ABD6D00025295 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,14 +204,18 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Eminy/Pods-Eminy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CountryList/CountryList.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PhoneNumberKit/PhoneNumberKit.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryList.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhoneNumberKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
